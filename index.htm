@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <section class="sec">
+        <main class="rights">
+            <div class="all">
+                <div class="right">
+                    <img  width="100%" height="100%" src="./Images/Right.png" alt="">
+                </div>
+                <div class="left">
+                    <img  width="100%" height="100%" src="./Images/left.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <img width="100%" height="100%"  src="./Images/Bottom.png" alt="">
+            </div>
+        </main>
+        <main class="lefts">
+            <h1 class="h11">START TO FLY WITH YOUR FAMILY</h1>
+            <br>
+            <button class="btn">EXPLORE HERE</button>
+            <br>
+            <p class="p11">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quaerat!
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                <br>
+                Sint delectus illo culpa fugiat, assumenda labore repellat <br>
+                fugit fuga vel quaerat quis at hic provident, id in reiciendis minima,<br>
+                 quas non soluta adipisci optio. Quibusdam vel architecto obcaecati dolorem
+                 <br>
+            </p>
+        </main>
+    </section>
+
+    <script>
+        gsap.from(".bottom",{
+            opacity:0,
+            delay:3,
+            y:600,
+            duration:2
+        })
+
+        gsap.from(".right",{
+            opacity:0,
+            delay:6,
+            x:-600,
+            duration:3
+        })
+        gsap.from(".left",{
+            opacity:0,
+            delay:4,
+            x:1600,
+            duration:3
+        })
+
+        gsap.from(".h11",{
+            opacity:0,
+            delay:4,
+            y:-100,
+            duration:3
+        })
+        gsap.from(".btn",{
+            opacity:0,
+            delay:4,
+            x:400,
+            duration:3
+        })
+        gsap.from(".p11",{
+            opacity:0,
+            delay:4,
+            y:500,
+            duration:3
+        })
+    </script>
+</body>
+</html>
